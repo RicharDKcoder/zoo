@@ -1,0 +1,24 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: microservice-config-server
+  cloud:
+    config:
+      server:
+        git:
+          #  配置git仓库
+          uri: git@github.com:RicharDKcoder/zoo.git
+          force-pull: true
+          search-paths: zoo-config/config/
+
+eureka:
+  client:
+    serviceUrl:
+      #  注册到eureka集群
+      defaultZone: http://eureka8101:8101/eureka/,http://eureka8102:8102/eureka/,http://eureka8103:8103/eureka/
+    healthcheck:
+      enabled: true
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${spring.application.instance_id:${server.port}}}

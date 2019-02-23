@@ -1,0 +1,52 @@
+spring:
+  application:
+    name: microservice-eureka-server
+  profiles:
+    active: stand-alone
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: false
+    serviceUrl:
+      defaultZone: http://eureka8101:8101/eureka/,http://eureka8102:8102/eureka/,http://eureka8103:8103/eureka/
+  instance:
+    prefer-ip-address: true
+
+---
+spring:
+  profiles: stand-alone
+server:
+  port: 8101
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    serviceUrl:
+      defaultZone: http://eureka8101:8101/eureka/
+
+---
+spring:
+  profiles: eureka8101
+server:
+  port: 8101
+eureka:
+  instance:
+    hostname: eureka8101
+
+---
+spring:
+  profiles: eureka8102
+server:
+  port: 8102
+eureka:
+  instance:
+    hostname: eureka8102
+
+---
+spring:
+  profiles: eureka8103
+server:
+  port: 8103
+eureka:
+  instance:
+    hostname: eureka8103
