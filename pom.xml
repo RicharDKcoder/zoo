@@ -12,6 +12,7 @@
         <module>zoo-dependencies</module>
         <module>zoo-server-config</module>
         <module>zoo-server-eureka</module>
+        <module>zoo-server-zuul</module>
     </modules>
 
     <properties>

@@ -1,8 +1,9 @@
 spring:
   application:
-    name: microservice-eureka-server
+    name: microservice-server-eureka
   profiles:
     active: stand-alone
+
 eureka:
   client:
     fetch-registry: true
@@ -15,8 +16,10 @@ eureka:
 ---
 spring:
   profiles: stand-alone
+
 server:
   port: 8101
+
 eureka:
   client:
     fetch-registry: false
@@ -27,8 +30,10 @@ eureka:
 ---
 spring:
   profiles: eureka8101
+
 server:
   port: 8101
+
 eureka:
   instance:
     hostname: eureka8101
@@ -36,8 +41,10 @@ eureka:
 ---
 spring:
   profiles: eureka8102
+
 server:
   port: 8102
+
 eureka:
   instance:
     hostname: eureka8102
@@ -45,8 +52,10 @@ eureka:
 ---
 spring:
   profiles: eureka8103
+
 server:
   port: 8103
+
 eureka:
   instance:
     hostname: eureka8103

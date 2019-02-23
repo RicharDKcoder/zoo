@@ -1,4 +1,4 @@
-package com.docryze.zoo.eureka;
+package com.docryze.zoo.server.eureka;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
