@@ -9,7 +9,7 @@ eureka:
     fetch-registry: true
     register-with-eureka: false
     serviceUrl:
-      defaultZone: http://eureka8101:8101/eureka/,http://eureka8102:8102/eureka/,http://eureka8103:8103/eureka/
+      defaultZone: http://eureka8001:8001/eureka/,http://eureka8002:8002/eureka/,http://eureka8003:8003/eureka/
   instance:
     prefer-ip-address: true
 
@@ -18,44 +18,44 @@ spring:
   profiles: stand-alone
 
 server:
-  port: 8101
+  port: 8001
 
 eureka:
   client:
     fetch-registry: false
     register-with-eureka: false
     serviceUrl:
-      defaultZone: http://eureka8101:8101/eureka/
+      defaultZone: http://eureka8001:8001/eureka/
 
 ---
 spring:
-  profiles: eureka8101
+  profiles: eureka8001
 
 server:
-  port: 8101
+  port: 8001
 
 eureka:
   instance:
-    hostname: eureka8101
+    hostname: eureka8001
 
 ---
 spring:
-  profiles: eureka8102
+  profiles: eureka8002
 
 server:
-  port: 8102
+  port: 8002
 
 eureka:
   instance:
-    hostname: eureka8102
+    hostname: eureka8002
 
 ---
 spring:
-  profiles: eureka8103
+  profiles: eureka8003
 
 server:
-  port: 8103
+  port: 8003
 
 eureka:
   instance:
-    hostname: eureka8103
+    hostname: eureka8003
