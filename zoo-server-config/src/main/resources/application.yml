@@ -1,5 +1,5 @@
 server:
-  port: 8001
+  port: 8101
 
 spring:
   application:
@@ -17,7 +17,7 @@ eureka:
   client:
     serviceUrl:
       #  注册到eureka集群
-      defaultZone: http://eureka8101:8101/eureka/,http://eureka8102:8102/eureka/,http://eureka8103:8103/eureka/
+      defaultZone: http://eureka8001:8001/eureka/,http://eureka8002:8002/eureka/,http://eureka8003:8003/eureka/
     healthcheck:
       enabled: true
   instance:

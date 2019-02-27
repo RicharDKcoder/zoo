@@ -1,9 +1,9 @@
 server:
-  port: 8301
+  port: 8401
 
 spring:
   application:
-    name: microservice-server-customer
+    name: microservice-server-score
 
 eureka:
   client:

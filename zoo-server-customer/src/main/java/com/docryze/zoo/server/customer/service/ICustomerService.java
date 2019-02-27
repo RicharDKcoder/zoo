@@ -3,7 +3,7 @@ package com.docryze.zoo.server.customer.service;
 import com.docryze.zoo.server.customer.beans.po.CustomerPo;
 
 /**
- * 用户管理接口
+ * 用户服务接口
  */
 public interface ICustomerService {
     /**
