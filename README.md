@@ -20,7 +20,12 @@ server-eureka:
         java -jar zoo-server-eureka-1.0-SNAPSHOT.jar --spring.profiles.active=eureka8103 
         
 server-zuul:
-    port :8201
+    port : 8201
     stand-alone模式: 
         java -jar zoo-server-zuul-1.0-SNAPSHOT.jar 
+        
+server-customer:
+    port : 8301
+    启动:
+        java -jar zoo-server-customer-1.0-SNAPSHOT.jar
 ````
