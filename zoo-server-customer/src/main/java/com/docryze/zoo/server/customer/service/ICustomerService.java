@@ -18,5 +18,5 @@ public interface ICustomerService {
      * @param id
      * @param customerPo
      */
-    void updateCustomer(Long id, CustomerPo customerPo);
+    boolean updateCustomer(Long id, CustomerPo customerPo);
 }

@@ -11,16 +11,28 @@ import java.util.Date;
 @Setter
 @ToString
 public class CustomerPo implements Serializable {
-    //主键id
+    /**
+     * 主键id
+     */
     private Long id;
-    //姓名
+    /**
+     * 姓名
+     */
     private String name;
-    //年龄
+    /**
+     * 年龄
+     */
     private Short age;
-    //性别
+    /**
+     * 性别
+     */
     private Byte gender;
-    //注册时间
+    /**
+     * 创建时间
+     */
     private Date createTime;
-    //更新时间
+    /**
+     * 修改时间
+     */
     private Date updateTime;
 }
